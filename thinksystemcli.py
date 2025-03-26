@@ -25,7 +25,7 @@ COMMAND_URL = f"{HOST}/devmgr/internal/storage-systems/1/cli/command"
 LOGOUT_URL = f"{HOST}/devmgr/utils/login"
 
 # User credentials
-payload = {"userId": "monitor", "password": "monitor1"}
+payload = {"userId": args.username, "password": args.password}
 
 # Create a session to persist cookies
 session = requests.Session()
@@ -37,7 +37,7 @@ if login_response.status_code != 200:
     print(login_response.text)
     exit(1)
 
-# Command payload
+# Command payload. The storage array expects the command to end with a semicolon
 if args.command.endswith(";"):
     command = args.command
 else:
