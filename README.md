@@ -10,6 +10,8 @@ The official Lenovo ThinkSystem CLI tool for the DE2000, DE4000 and DE6000 stora
 
 Consider using the "monitor" account, as this has the least privileges.
 
+There are many commands, some perhaps more stateful or multi-step than the ones listed below. Whether these work is an open question.
+
 ## Commands
 
 Here are some simple command you can try. Commands appear to be case-insensitive.
