@@ -59,3 +59,4 @@ if command_response.status_code == 200:
 
 # Logout to clean up session
 session.delete(LOGOUT_URL, verify=False)
+
